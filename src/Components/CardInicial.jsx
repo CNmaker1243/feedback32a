@@ -1,13 +1,12 @@
-import iconStar from "../assets/feedback_imagens-main/icon-star.svg"
+import iconStar from "../assets/icon-star.svg"
 
 export function CardInicial({ nota, setNota, setSubmited }) {
-
     function handleSubmit(){
         if (nota !== 0) {
           setSubmited(true)
           return
         }
-
+    
         alert("Please, select a rate button!")
     }
 
@@ -22,7 +21,6 @@ export function CardInicial({ nota, setNota, setSubmited }) {
             <p className="text-sm text-light-grey mb-6">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
             <div className="flex justify-between mb-6">
-
                 <InputButton valor={1} setNota={setNota} />
                 <InputButton valor={2} setNota={setNota} />
                 <InputButton valor={3} setNota={setNota} />
