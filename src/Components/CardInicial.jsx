@@ -1,4 +1,4 @@
-import iconStar from "../assets/icon-star.svg"
+import iconStar from "../assets/feedback_imagens-main/icon-star.svg"
 
 export function CardInicial({ nota, setNota, setSubmited }) {
 
